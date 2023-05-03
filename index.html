@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilpreet Dhaliwal</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/4edcc594a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <div class="navAlign">
+    <header class="navBar">
+        <div class="wrapper navigation">
             <nav>
                 <ul class="navLinks">
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="./aboutMe.html" target="_blank">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -23,19 +24,19 @@
     </header>
 
     <!-- Header -->
-    <section>
-        <div class="wrapper">
+    <section id="home" class="headerSection">
+        <div class="wrapper headerText">
             <h1>Web Developer</h1>
-            <p>Dilpreet Dhaliwal</p>
-            <a href="https://www.linkedin.com/in/dilpreet-dhaliwal/" target="_blank">Let's Connect</a>
+            <p>—Dilpreet Dhaliwal</p>
+            <a href="https://www.linkedin.com/in/dilpreet-dhaliwal/" target="_blank" class="linkButton">Let's Connect</a>
         </div>
     </section>
 
     <!-- About me -->
     <section>
-        <div class="wrapper">
+        <div class="wrapper about">
             <div class="aboutImage">
-                <img src="" alt="an image of Dilpreet Dhaliwal">
+                <img src="assets/03B818C7-C569-4AB5-9AC0-F301E7B8EA1D.jpg" alt="an image of Dilpreet Dhaliwal">
             </div>
             <div class="aboutText">
                 <h2>My Story</h2>
@@ -49,48 +50,56 @@
     <section>
         <div class="wrapper">
             <h3>Skills</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javscript</li>
-                <li>Jquery</li>
-                <li>React</li>
-                <li>Firebase</li>
+            <ul class="skills">
+                <li class="iconFlex"><i class="fa-brands fa-html5"></i>HTML5</li>
+                <li class="iconFlex"><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                <li class="iconFlex"><i class="fa-brands fa-js"></i>Javscript</li>
+                <li class="iconFlex"><i class="fa-solid fa-clipboard-question"></i>Jquery</li>
+                <li class="iconFlex"><i class="fa-brands fa-react"></i>React</li>
+                <li class="iconFlex"><i class="fa-solid fa-code-branch"></i>Firebase</li>
             </ul>
         </div>
     </section>
 
     <!-- Portfolio -->
     <section id="portfolio">
-        <div class="wrapper">
+        <div class="wrapper portfolioFlex">
             <div class="portfolioItemContainer">
-                <img src="" alt="">
-                <h4>Project1</h4>
-                <p>small description</p>
+                <img src="https://placehold.co/400" alt="">
+                <div class="itemDetails">
+                    <h4>Project1</h4>
+                    <p>small description</p>
+                </div>
             </div>
             <div class="portfolioItemContainer">
-                <img src="" alt="">
-                <h4>Project2</h4>
-                <p>small description</p>
+                <img src="https://placehold.co/400" alt="">
+                <div class="itemDetails">
+                    <h4>Project1</h4>
+                    <p>small description</p>
+                </div>
             </div>
             <div class="portfolioItemContainer">
-                <img src="" alt="">
-                <h4>Project3</h4>
-                <p>small description</p>
+                <img src="https://placehold.co/400" alt="">
+                <div class="itemDetails">
+                    <h4>Project1</h4>
+                    <p>small description</p>
+                </div>
             </div>
             <div class="portfolioItemContainer">
-                <img src="" alt="">
-                <h4>Project4</h4>
-                <p>small description</p>
+                <img src="https://placehold.co/400" alt="">
+                <div class="itemDetails">
+                    <h4>Project1</h4>
+                    <p>small description</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Lets work together! -->
     <section>
-        <div class="wrapper">
+        <div class="wrapper letsWorkTogether">
             <p>I can help boost your project!</p>
-            <h3><a href="./contact.html">Let's Work Together -></a></h3>
+            <h3><a href="./contact.html">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a></h3>
         </div>
     </section>
 
@@ -128,14 +137,23 @@
 
     <!-- Footer -->
     <footer>
-        <div class="wrapper">
+        <div class="wrapper footCols">
             <div class="footCol1">
                 <ul class="contactNavigationList">
-                    <il><a href="./index.html">Home</a></il>
+                    <il><a href="#home">Home</a></il>
                      <il><a href="./aboutMe.html" target="_blank">About</a></il>
                      <il><a href="#portfolio">Portfolio</a></il>
                      <il><a href="./contact.html" target="_blank">Contact</a></il>
                  </ul>
+            </div>
+            <div class="footCol2">
+                <h6>Juno College of Technology</h6>
+            </div>
+            <div class="footCol3">
+                <h6>Contact</h4>
+                <p>dilpreet13dhaliwal@gmail.com</p>
+                <p>(647) 620 - 9100</p>
+                <p>Toronto, ON</p>
             </div>
         </div>
 
