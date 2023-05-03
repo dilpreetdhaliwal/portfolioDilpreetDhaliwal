@@ -642,10 +642,76 @@ h3 {
   text-align: center;
 }
 .letsWorkTogether a {
-  margin: 5px;
+  color: #000;
+}
+.letsWorkTogether h3:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.letsWorkTogether h3 {
+  margin: 6px;
+  transition: all 0.3s ease-out;
 }
 .letsWorkTogether p {
-  margin: 5px;
+  margin: 6px;
+  color: #606060;
+}
+
+.quoteContainer {
+  display: flex;
+  background: #adc5ee;
+  width: 75%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 25px auto;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+
+.quoteContainer:hover {
+  filter: brightness(80%);
+}
+
+.leftQuote {
+  width: 30%;
+  margin-bottom: 35px;
+}
+
+.rightQuote {
+  width: 70%;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.footContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactNavigationList {
+  display: flex;
+  flex-direction: column;
+}
+
+.footCol1,
+.footCol2 {
+  width: 30%;
+}
+.footCol1 h6,
+.footCol1 p,
+.footCol2 h6,
+.footCol2 p {
+  margin: 2px;
+  font-size: 1rem;
+}
+.footCol1 a,
+.footCol2 a {
+  color: #000;
+  text-transform: uppercase;
 }
 
 .fa-html5 {
