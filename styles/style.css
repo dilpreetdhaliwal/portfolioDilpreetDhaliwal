@@ -431,12 +431,13 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #353535;
   line-height: 1.6em;
   font-weight: 500;
   background: #ffffff;
+  color: #000;
 }
 
 .wrapper {
@@ -483,6 +484,21 @@ a {
 h3 {
   font-size: 1.8rem;
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .navBar {
@@ -583,14 +599,15 @@ h3 {
   padding: 0 0 120px 70px;
 }
 .headerText h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   margin-bottom: 20px;
+  letter-spacing: 4px;
 }
 .headerText p {
   font-size: 1.8rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
 .about {
@@ -614,10 +631,8 @@ h3 {
   margin: auto 0 auto 80px;
   width: 75%;
 }
-.aboutText h2 {
+.aboutText h3 {
   margin-top: 3px;
-  font-size: 2rem;
-  text-transform: uppercase;
 }
 .aboutText p {
   margin-bottom: 30px;
@@ -641,6 +656,16 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   border: solid 2px #adc5ee;
+}
+
+.skillsBackground {
+  background: -webkit-gradient(linear, left top, right top, from(#79879e), color-stop(#bdcffb), color-stop(#dff8fd), color-stop(#fff), color-stop(#fff), color-stop(#fff), color-stop(#fff), color-stop(#dff8fd), color-stop(#bdcffb), to(#79879e));
+  background: linear-gradient(to right, #79879e, #bdcffb, #dff8fd, #fff, #fff, #fff, #fff, #dff8fd, #bdcffb, #79879e);
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+.skillsBackground h2 {
+  margin: 20px 0 60px 0;
 }
 
 .skills {
@@ -678,12 +703,6 @@ h3 {
   text-align: center;
 }
 
-.skillsBackground {
-  background: -webkit-gradient(linear, left top, right top, from(#79879e), color-stop(#bdcffb), color-stop(#dff8fd), color-stop(#fff), color-stop(#fff), color-stop(#fff), color-stop(#fff), color-stop(#dff8fd), color-stop(#bdcffb), to(#79879e));
-  background: linear-gradient(to right, #79879e, #bdcffb, #dff8fd, #fff, #fff, #fff, #fff, #dff8fd, #bdcffb, #79879e);
-  padding: 30px 0 50px 0;
-}
-
 .portfolioFlex {
   margin-top: 30px;
   display: -webkit-box;
@@ -694,6 +713,17 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.portfolioTitle {
+  text-align: center;
+  padding-top: 20px;
+}
+.portfolioTitle a {
+  color: #79879e;
+}
+.portfolioTitle a:hover {
+  color: #adc5ee;
 }
 
 .portfolioItemContainer {
@@ -788,6 +818,7 @@ h3 {
           align-items: center;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
+  min-height: 200px;
 }
 
 .quoteContainer.active {
@@ -799,7 +830,7 @@ h3 {
 
 .leftQuote {
   width: 30%;
-  margin-bottom: 35px;
+  margin: 0 20px 35px 30px;
 }
 
 .rightQuote {

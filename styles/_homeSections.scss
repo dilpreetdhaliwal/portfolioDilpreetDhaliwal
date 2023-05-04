@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 // ---------- Header ----------
 .headerSection {
     background: url(../assets/emile-perron-xrVDYZRGdw4-unsplash.jpg);
@@ -16,14 +18,15 @@
     justify-content: center;
     padding: 0 0 120px 70px;
     h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
         text-transform: uppercase;
         margin-bottom: 20px;
+        letter-spacing: 4px;
     }
     p {
         font-size: 1.8rem;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
     }
 }
 
@@ -45,10 +48,8 @@
 .aboutText {
     margin: auto 0 auto 80px;
     width: 75%;
-    h2 {
+    h3 {
         margin-top: 3px;
-        font-size: 2rem;
-        text-transform: uppercase;
     }
     p{
         margin-bottom: 30px;
@@ -72,6 +73,15 @@
 }
 
 // ---------- Skills ----------
+.skillsBackground {
+    background: linear-gradient(to right, #79879e, #bdcffb, #dff8fd, #fff, #fff, #fff, #fff, #dff8fd, #bdcffb, #79879e);
+    padding: 30px 0 50px 0;
+    text-align: center;
+    h2 {
+        margin: 20px 0 60px 0;
+    }
+}
+
 .skills {
     display: flex;
     justify-content: space-around;
@@ -93,17 +103,23 @@
     text-align: center;
 }
 
-// ---------- Skills ----------
-.skillsBackground {
-    background: linear-gradient(to right, #79879e, #bdcffb, #dff8fd, #fff, #fff, #fff, #fff, #dff8fd, #bdcffb, #79879e);
-    padding: 30px 0 50px 0;
-}
-
+// ---------- Portfolio ----------
 .portfolioFlex {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.portfolioTitle {
+    text-align: center;
+    padding-top: 20px;
+    a {
+        color: #79879e;
+    }
+    a:hover {
+        color: #adc5ee;
+    }
 }
   
 .portfolioItemContainer {
@@ -179,6 +195,7 @@
     margin: 75px auto 25px auto;
     align-items: center;
     transition: opacity 0.5s ease-in-out;
+    min-height: 200px;
 }
 
 .quoteContainer.active {
@@ -188,7 +205,7 @@
 
 .leftQuote {
     width: 30%;
-    margin-bottom: 35px;
+    margin: 0 20px 35px 30px;
 }
 
 .rightQuote {

@@ -1,10 +1,13 @@
+@use "variables" as v;
+
 body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: v.$bodyFont;
 	font-size: 16px;
 	color:#353535;
 	line-height:1.6em;
 	font-weight:500;
 	background:#ffffff;
+    color: #000;
 }
 
 .wrapper {
@@ -47,4 +50,19 @@ a {
 h3 {
     font-size: 1.8rem;
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: v.$headingFont;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
