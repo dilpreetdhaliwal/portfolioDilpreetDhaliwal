@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilpreet Dhaliwal</title>
+    <title>Dilpreet Dhaliwal | Web Developer</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/4edcc594a0.js" crossorigin="anonymous"></script>
 </head>
@@ -12,14 +12,16 @@
     <!-- Navigation Bar -->
     <header class="navBar">
         <div class="wrapper navigation">
-            <nav>
-                <ul class="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./aboutMe.html" target="_blank">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+            <div class="homeLink">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
                 </ul>
-            </nav>
+            </div>
+                <ul class="navLinks">
+                    <li><a href="">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li class="contactLink"><a href="./contact.html" target="_blank">Say hello</a></li>
+                </ul>
         </div>
     </header>
 
@@ -47,7 +49,7 @@
     </section>
 
     <!-- skills images -->
-    <section>
+    <section class="skillsBackground">
         <div class="wrapper">
             <h3>Skills</h3>
             <ul class="skills">
@@ -63,43 +65,47 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-        <div class="wrapper portfolioFlex">
-            <div class="portfolioItemContainer">
-                <img src="https://placehold.co/400" alt="">
-                <div class="itemDetails">
-                    <h4>Project1</h4>
-                    <p>small description</p>
+        <div class="wrapper portfolioTitle">
+            <h3>My Recent Work</h3>
+            <p>View some of my past projects below and <a href="mailto:dilpreet13dhaliwal@gmail.com">email me </a>for more.</p>
+            <div class="portfolioFlex">
+                <div class="portfolioItemContainer">
+                    <img src="https://placehold.co/400" alt="">
+                    <div class="itemDetails">
+                        <h4>Project1</h4>
+                        <p>small description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolioItemContainer">
-                <img src="https://placehold.co/400" alt="">
-                <div class="itemDetails">
-                    <h4>Project1</h4>
-                    <p>small description</p>
+                <div class="portfolioItemContainer">
+                    <img src="https://placehold.co/400" alt="">
+                    <div class="itemDetails">
+                        <h4>Project1</h4>
+                        <p>small description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolioItemContainer">
-                <img src="https://placehold.co/400" alt="">
-                <div class="itemDetails">
-                    <h4>Project1</h4>
-                    <p>small description</p>
+                <div class="portfolioItemContainer">
+                    <img src="https://placehold.co/400" alt="">
+                    <div class="itemDetails">
+                        <h4>Project1</h4>
+                        <p>small description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolioItemContainer">
-                <img src="https://placehold.co/400" alt="">
-                <div class="itemDetails">
-                    <h4>Project1</h4>
-                    <p>small description</p>
+                <div class="portfolioItemContainer">
+                    <img src="https://placehold.co/400" alt="">
+                    <div class="itemDetails">
+                        <h4>Project1</h4>
+                        <p>small description</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Lets work together! -->
-    <section>
+    <section class="letsWorkBackground">
         <div class="wrapper letsWorkTogether">
             <p>I can help boost your project!</p>
-            <h3><a href="./contact.html">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a></h3>
+            <h3><a href="https://www.linkedin.com/in/dilpreet-dhaliwal/">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a></h3>
         </div>
     </section>
 
@@ -109,7 +115,7 @@
             <div class="carousel">
                 <div class="quoteContainer">
                     <div class="leftQuote">
-                        <h5>Quote person name</h5>
+                        <h5>Quote person name 1</h5>
                     </div>
                     <div class="rightQuote">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error non cupiditate perferendis dolores pariatur repudiandae ex atque unde iusto, soluta magnam quia laboriosam culpa iste, exercitationem, reiciendis temporibus voluptatibus veritatis."</p>
@@ -117,7 +123,7 @@
                 </div>
                 <div class="quoteContainer">
                     <div class="leftQuote">
-                        <h5>Quote person name</h5>
+                        <h5>Quote person name 2</h5>
                     </div>
                     <div class="rightQuote">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error non cupiditate perferendis dolores pariatur repudiandae ex atque unde iusto, soluta magnam quia laboriosam culpa iste, exercitationem, reiciendis temporibus voluptatibus veritatis."</p>
@@ -125,11 +131,15 @@
                 </div>
                 <div class="quoteContainer">
                     <div class="leftQuote">
-                        <h5>Quote person name</h5>
+                        <h5>Quote person name 3</h5>
                     </div>
                     <div class="rightQuote">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error non cupiditate perferendis dolores pariatur repudiandae ex atque unde iusto, soluta magnam quia laboriosam culpa iste, exercitationem, reiciendis temporibus voluptatibus veritatis."</p>
                     </div>
+                </div>
+                <div class="arrowContainer">
+                    <div class="arrow arrowLeft"><i class="fa-solid fa-backward-step"></i></div>
+                    <div class="arrow arrowRight"><i class="fa-solid fa-forward-step"></i></div>
                 </div>
             </div>
         </div>
@@ -138,23 +148,15 @@
     <!-- Footer -->
     <footer>
         <div class="wrapper footContainer">
-            <div class="footCol1">
-                <ul class="contactNavigationList">
-                    <il><a href="#home">Home</a></il>
-                     <il><a href="./aboutMe.html" target="_blank">About</a></il>
-                     <il><a href="#portfolio">Portfolio</a></il>
-                     <il><a href="./contact.html" target="_blank">Contact</a></il>
-                 </ul>
-            </div>
-            <div class="footCol2">
-                <h6>Contact:</h4>
-                <p>dilpreet13dhaliwal@gmail.com</p>
-                <p>(647) 620 - 9100</p>
-                <p>Toronto, ON</p>
-            </div>
+            <ul class="contactNavigationList">
+                <li><a href="#home"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dilpreet-dhaliwal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="mailto:dilpreet13dhaliwal@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
         </div>
 
     </footer>
     
+    <script src="javascript/script.js" type="module"></script>
 </body>
 </html>

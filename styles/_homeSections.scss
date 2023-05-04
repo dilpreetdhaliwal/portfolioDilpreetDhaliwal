@@ -31,6 +31,7 @@
 .about {
     display: flex;
     padding: 30px 0;
+    margin: 30px auto;
 }
 
 .aboutImage {
@@ -93,6 +94,11 @@
 }
 
 // ---------- Skills ----------
+.skillsBackground {
+    background: linear-gradient(to right, #79879e, #bdcffb, #dff8fd, #fff, #fff, #fff, #fff, #dff8fd, #bdcffb, #79879e);
+    padding: 30px 0 50px 0;
+}
+
 .portfolioFlex {
     margin-top: 30px;
     display: flex;
@@ -124,18 +130,32 @@
 }
 
 // ---------- Lets Work Together ----------
+.letsWorkBackground {
+    background: url(../assets/nordwood-themes-kRNZiGKtz48-unsplash.jpg) bottom fixed;
+    width: 100vw;
+    padding: 150px 0;
+}
+
 .letsWorkTogether {
     text-align: center;
+    margin: 50px auto;
     a {
         color: #000;
+        transition: all 0.3s ease-out;
+    }
+    a:hover {
+        color: #adc5ee; 
     }
     h3:hover {
         transform: scale(1.1);
-        text-decoration: underline;
+        color: #adc5ee;
     }
     h3 {
+        font-size: 4rem;
         margin: 6px;
         transition: all 0.3s ease-out;
+        width: fit-content;
+        margin: 0 auto;
     }
     p {
         margin: 6px;
@@ -144,20 +164,26 @@
 }
 
 // ---------- Quotes ----------
+.carousel {
+    min-height: 250px;
+    position: relative;
+    padding-bottom: 40px;
+}
 .quoteContainer {
     display: flex;
     background: #adc5ee;
-    width: 75%;
+    width: 60%;
     padding: 10px;
     border-radius: 3px;
-    // display: none;
-    margin: 25px auto;
+    display: none;
+    margin: 75px auto 25px auto;
     align-items: center;
-    transition: all 0.3s ease-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.quoteContainer:hover {
-    filter: brightness(80%);
+.quoteContainer.active {
+    display: flex;
+    opacity: 1;
 }
 
 .leftQuote {
@@ -169,10 +195,32 @@
     width: 70%;
 }
 
+.arrowContainer {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  
+  .arrow {
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: all;
+    color: #adc5ee;
+  }
+  
+  .arrow:hover {
+    opacity: 1;
+  }
+
 // ---------- Footer ----------
 footer {
-    background-color: #f8f8f8;
-    padding: 2rem;
+    background-color: rgb(173, 197, 238, 0.5);
+    padding: 4rem;
   }
   
   .footContainer {
@@ -182,21 +230,28 @@ footer {
   }
 
   .contactNavigationList {
+    font-size: 2rem;
     display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    a {
+        margin: 25px;
+        color: #000;
+        transition: all 0.3s ease-out;
+    }
+    li {
+        transition: all 0.3s ease-out;
+    }
+    li:hover {
+        transform: scale(1.4);
+    }
   }
 
-  .footCol1,
-  .footCol2 {
-    width: 30%;
+  .footCol1 {
+    text-align: center;
     h6,
     p {
         margin: 2px;
         font-size: 1rem;
-    }
-    a {
-        color: #000;
-        text-transform: uppercase;
     }
   }
 
