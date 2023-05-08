@@ -220,33 +220,33 @@
     display: flex;
     justify-content: space-between;
     pointer-events: none;
-  }
+}
   
-  .arrow {
+.arrow {
     font-size: 3rem;
     cursor: pointer;
     opacity: 0.5;
     pointer-events: all;
     color: #adc5ee;
-  }
+}
   
-  .arrow:hover {
+.arrow:hover {
     opacity: 1;
-  }
+}
 
 // ---------- Footer ----------
 footer {
     background-color: rgb(173, 197, 238, 0.5);
     padding: 4rem;
-  }
+}
   
-  .footContainer {
+.footContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .contactNavigationList {
+.contactNavigationList {
     font-size: 2rem;
     display: flex;
     margin: 0 auto;
@@ -261,14 +261,75 @@ footer {
     li:hover {
         transform: scale(1.4);
     }
-  }
+}
 
-  .footCol1 {
+.footCol1 {
     text-align: center;
     h6,
     p {
         margin: 2px;
         font-size: 1rem;
     }
-  }
+}
+
+// -------- Media Query (MOBILE SITE) --------
+@media (max-width: 600px) {
+
+    /* Header */
+    .headerText {
+      padding: 0 20px 120px 20px;
+      p {
+        line-height: 1.1;
+      }
+    }
+  
+    /* About */
+    .about {
+      flex-direction: column;
+      margin: 20px auto;
+    }
+  
+    .aboutImage {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .aboutText {
+      margin: 0;
+      width: 100%;
+    }
+  
+    /* Skills */
+    .skills {
+      flex-direction: column;
+    }
+  
+    /* Portfolio */
+    .portfolioItemContainer {
+      width: 100%;
+    }
+  
+    /* Lets Work Together */
+    .letsWorkBackground {
+      padding: 100px 20px;
+    }
+  
+    .letsWorkTogether {
+      margin: 30px auto;
+    }
+  
+    /* Quotes */
+    .quoteContainer {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .leftQuote {
+        margin-bottom: 0;
+    }
+}
+
+
+
+  
 

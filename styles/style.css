@@ -493,6 +493,7 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
+  line-height: 1.2;
 }
 
 h2 {
@@ -501,6 +502,11 @@ h2 {
   letter-spacing: 4px;
 }
 
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    line-height: 1.1;
+  }
+}
 .navBar {
   position: fixed;
   top: 0;
@@ -912,6 +918,60 @@ footer {
   font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+  /* Header */
+  .headerText {
+    padding: 0 20px 120px 20px;
+  }
+  .headerText p {
+    line-height: 1.1;
+  }
+  /* About */
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px auto;
+  }
+  .aboutImage {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutText {
+    margin: 0;
+    width: 100%;
+  }
+  /* Skills */
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* Portfolio */
+  .portfolioItemContainer {
+    width: 100%;
+  }
+  /* Lets Work Together */
+  .letsWorkBackground {
+    padding: 100px 20px;
+  }
+  .letsWorkTogether {
+    margin: 30px auto;
+  }
+  /* Quotes */
+  .quoteContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leftQuote {
+    margin-bottom: 0;
+  }
+}
 .fa-html5 {
   color: #ec632a;
 }
