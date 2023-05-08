@@ -59,10 +59,17 @@ h4,
 h5,
 h6 {
     font-family: v.$headingFont;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+@media (max-width: 600px) {
+    h1, h2, h3 {
+        line-height: 1.1;
+    }
 }
